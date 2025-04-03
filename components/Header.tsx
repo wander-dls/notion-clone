@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from "@clerk/nextjs";
 // import { User } from "lucide-react";

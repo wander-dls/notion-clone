@@ -1,6 +1,7 @@
 "use client"
 
 import { SignedIn, SignedOut, SignInButton, UserButton, useUser } from "@clerk/nextjs";
+import Breadcrumbs from "@/components/Breadcrumbs";
 // import { User } from "lucide-react";
 
 const Header = () => {
@@ -16,7 +17,7 @@ const Header = () => {
 
 
         {/* Breadcrumbs */}
-
+        <Breadcrumbs />
 
         <div>
           <SignedOut>

@@ -1,8 +1,9 @@
-'use client'
 
 import Document from "@/components/Document"
 
-const DocumentPage = ({ params: {id}}:{params:{id: string}}) => {
+const DocumentPage = async ({ params }:{params: Promise<{id: string}>}) => {
+
+  const { id } = await params
   return (
     <>
       <div><Document id={id} /></div>
